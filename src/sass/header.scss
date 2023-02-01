@@ -1,0 +1,98 @@
+.header {
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    &__logo-container {
+        margin: 0;
+    }
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        &__language-switch {
+            text-decoration: none;
+            color: $white;
+        }
+        &__theme-switch__container {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            & img {
+                width: 30px;
+                position: absolute;
+            }
+            &--dark {
+                display: none; //👋
+            }
+        }
+        &--open {
+            width: 70px;
+            cursor: pointer;
+        }
+        &__container {
+            flex-direction: column;
+            justify-content: space-between;
+            position: fixed;
+            padding-bottom: 40px;
+            display: none; //👋
+            background: $black;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            & div {
+                display: flex;
+                padding: 0px 20px;
+                justify-content: space-between;
+                align-items: center;
+                & figure:nth-child(2) {
+                    & img {
+                        width: 70px;
+                        padding: 20px;
+                    }
+                }
+            }
+            & ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+                list-style: none;
+                font-weight: 800;
+                padding: 0px 40px;
+                & li {
+                    & a {
+                        text-decoration: none;
+                        color: $white; 
+                        font-size: 3.2rem;
+                    }
+                }
+                & figure {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .header {
+        padding: 40px 100px;
+        &__menu {
+            gap: 20px;
+            &__container {
+                & div {
+                    padding: 40px 100px;
+                }
+                & ul {
+                    padding: 0px 100px;
+                    & li {
+                        & a {
+                            font-size: 6.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

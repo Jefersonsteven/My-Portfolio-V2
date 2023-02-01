@@ -1,8 +1,115 @@
 /*!**************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/sass/style.scss ***!
   \**************************************************************************************************************/
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: rgb(14, 14, 14);
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+}
+
+.header {
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo-container {
+  margin: 0;
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header__menu__language-switch {
+  text-decoration: none;
+  color: white;
+}
+.header__menu__theme-switch__container {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.header__menu__theme-switch__container img {
+  width: 30px;
+  position: absolute;
+}
+.header__menu__theme-switch__container--dark {
+  display: none;
+}
+.header__menu--open {
+  width: 70px;
+  cursor: pointer;
+}
+.header__menu__container {
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  padding-bottom: 40px;
+  display: none;
+  background: rgb(14, 14, 14);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.header__menu__container div {
+  display: flex;
+  padding: 0px 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menu__container div figure:nth-child(2) img {
+  width: 70px;
+  padding: 20px;
+}
+.header__menu__container ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  list-style: none;
+  font-weight: 800;
+  padding: 0px 40px;
+}
+.header__menu__container ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 3.2rem;
+}
+.header__menu__container ul figure {
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    padding: 40px 100px;
+  }
+  .header__menu {
+    gap: 20px;
+  }
+  .header__menu__container div {
+    padding: 40px 100px;
+  }
+  .header__menu__container ul {
+    padding: 0px 100px;
+  }
+  .header__menu__container ul li a {
+    font-size: 6.4rem;
+  }
+}
+.active {
+  display: flex;
 }

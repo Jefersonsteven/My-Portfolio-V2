@@ -1,5 +1,23 @@
-body {
+$principal-color: #3B2BED;
+$white: white;
+$black: rgb(14, 14, 14);
+$font: 'Montserrat', sans-serif;
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: $black;
+    width: 100vw;
+    height: 100vh;
+    color: $white;
+    font-family: $font;
+    font-size: 1.6rem;
 }
