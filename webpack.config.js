@@ -44,13 +44,29 @@ module.exports = {
             inject: true,
             template: './public/index.html',
         }),
+        new HtmlWebpackPlugin({
+            filename: 'about-me.html',
+            template: './public/1/about-me.html',
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'projects.html',
+            template: './public/1/projects.html',
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'contact.html',
+            template: './public/1/contact.html',
+        }),
         new MiniCssExtractPlugin(),
         new CopyPlugin({
             patterns: [
                 {
                     from: path.resolve(__dirname, 'src', 'assets/images'),
                     to: 'assets/images'
-                }
+                },
+                // {
+                //     from: path.resolve(__dirname, 'public', '1'),
+                //     to: '1'
+                // }
             ]
         })
     ]

@@ -46,13 +46,16 @@
                 border-radius: 25px;
                 border: none;
                 background: $principal-color;
-                color: $white;
-                font-family: $font;
-                font-weight: 600;
                 cursor: pointer;
                 backdrop-filter: blur(3px); 
                 background-color: rgba(21, 7, 83, 0.1);
                 box-shadow: 15px 15px 0px 0px rgba(59, 43, 237, 0), inset -1px -1px 1px 0px rgba(59, 43, 237, 0.315), inset 0px 1px 1px 0px rgba(255, 255, 255, 0.308);
+                & a {
+                    color: $white;
+                    font-family: $font;
+                    font-weight: 600;
+                    text-decoration: none;
+                }
             }
         }
         &__redes {
