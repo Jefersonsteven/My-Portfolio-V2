@@ -14,7 +14,8 @@ html {
 }
 
 body {
-    background: $black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.719)), url("https://img.freepik.com/vector-gratis/resumen-ruido-fondo_1217-1222.jpg?w=740&t=st=1675291967~exp=1675292567~hmac=8187e8d8af0c90f48427160fcf48f717d390d306d3203b0773086e1e9583f19f");
+    background-size: cover;
     width: 100vw;
     height: 100vh;
     color: $white;

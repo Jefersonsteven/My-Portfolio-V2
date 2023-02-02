@@ -1,5 +1,4 @@
 .header {
-    padding: 0px 20px;
     display: flex;
     justify-content: space-between;
     &__logo-container {
@@ -35,15 +34,15 @@
             position: fixed;
             padding-bottom: 40px;
             display: none; //👋
-            background: $black;
+            background: rgba(17, 17, 17, 0.466);
             backdrop-filter: blur(15px);
             width: 100%;
             height: 100%;
             top: 0;
             left: 0;
+            z-index: 6;
             & div {
                 display: flex;
-                padding: 0px 20px;
                 justify-content: space-between;
                 align-items: center;
                 & figure:nth-child(2) {

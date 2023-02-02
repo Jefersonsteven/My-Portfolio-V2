@@ -1,0 +1,20 @@
+.footer {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    & div {
+        height: 16px;
+        width: 122px;
+        margin-right: 20px;
+        background: rgba( 255, 255, 255, 0.05 );
+        box-shadow: 0 8px 32px 0 rgba(29, 21, 143, 0.247);
+        backdrop-filter: blur( 6.5px );
+        -webkit-backdrop-filter: blur( 6.5px );
+        border-radius: 0px 10px 10px 0px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+    & p {
+        font-size: 1.2rem;
+    }
+}
