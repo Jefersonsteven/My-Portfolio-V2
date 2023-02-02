@@ -232,6 +232,105 @@ body {
     justify-content: space-between;
   }
 }
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 75%;
+}
+.about-me__photo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+}
+.about-me__photo-container figure {
+  width: 143px;
+  height: 143px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  backdrop-filter: blur(3px);
+  background-color: rgba(21, 7, 83, 0.1);
+  box-shadow: 15px 15px 0px 0px rgba(59, 43, 237, 0), inset -1px -1px 1px 0px rgba(59, 43, 237, 0.315), inset 0px 1px 1px 0px rgba(255, 255, 255, 0.308);
+}
+.about-me__photo-container figure img {
+  width: 123px;
+  height: 123px;
+}
+.about-me__info {
+  display: flex;
+  flex-direction: column;
+  height: 58%;
+  justify-content: space-evenly;
+}
+.about-me__info p {
+  padding: 0px 20px;
+}
+.about-me__info div {
+  display: flex;
+  align-items: center;
+}
+.about-me__info div button {
+  width: 180px;
+  height: 37px;
+  margin-right: 20px;
+  border: none;
+  border-radius: 0px 25px 25px 0px;
+  backdrop-filter: blur(3px);
+  background-color: rgba(21, 7, 83, 0.1);
+  box-shadow: 15px 15px 0px 0px rgba(59, 43, 237, 0), inset -1px -1px 1px 0px rgba(59, 43, 237, 0.315), inset 0px 1px 1px 0px rgba(255, 255, 255, 0.308);
+}
+.about-me__info div button a {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (min-width: 375px) {
+  .about-me__photo-container figure {
+    width: 250px;
+    height: 250px;
+  }
+  .about-me__photo-container figure img {
+    width: 230px;
+    height: 230px;
+  }
+}
+@media (min-width: 1024px) {
+  .about-me {
+    align-items: center;
+    height: 55%;
+    flex-direction: row;
+    padding: 0px 80px;
+  }
+  .about-me__photo-container figure {
+    width: 335px;
+    height: 335px;
+  }
+  .about-me__photo-container figure img {
+    width: 300px;
+    height: 300px;
+  }
+  .about-me__info {
+    height: 100%;
+  }
+  .about-me__info p {
+    font-size: 2.2rem;
+  }
+  .about-me__info div {
+    padding: 0px 20px;
+  }
+  .about-me__info div button {
+    width: 283px;
+    height: 50px;
+    border-radius: 25px;
+  }
+  .about-me__info div button a {
+    font-size: 2rem;
+  }
+}
 .footer {
   position: absolute;
   bottom: 20px;
